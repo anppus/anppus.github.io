@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fragment</title>
+	<style>
+		*,html,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		font-family: FZXiaoBiaoSong-B05Ss;
+		}
+		@font-face {
+			font-family: FZXiaoBiaoSong-B05Ss;
+			src: url("css/W95FA.woff");
+		}
+		body{
+			padding-top: 20px;
+		}
+		@font-face {
+			font-family: FZXiaoBiaoSong-B05S;
+			src: url("css/Faraco Hand.woff");
+		}      
+		
+		.x-tr{
+			text-align: right;
+		}
+		.x-tc{
+			text-align: center;
+		}
+		.x-row{
+			display: flex;
+		}
+		.x-row-middle {
+			align-items: center;
+		}
+		.x-row-bottom {			align-items: flex-start;
+		}
+		.x-row-around {
+			justify-content: space-around;
+		}
+		.x-row-between {
+			justify-content: space-between;
+		}
+		.x-row-end {
+			justify-content: flex-end;
+		}
+		
+		
+		.x-row-center {
+			justify-content: center;
+		}
+		.body{
+			margin: 200px auto 0;
+			width: 3400px;
+			height: 470px;
+			position: relative;
+			overflow: hidden;
+		}
+		.body .text{
+			text-align: right;
+			font-size: 20px;
+			margin-bottom: 120px;
+		}
+		.list{
+			display: flex;
+			justify-content: space-between;
+		}
+		.list p{
+			font-size: 24px;
+			font-family: FZXiaoBiaoSong-B05S;
+		}
+		.feet-right{
+			transform: rotate(-21deg);
+			margin-top: 50px;
+		}
+		.leg2{
+			transform: rotate(-21deg);
+			margin-top: 50px;
+		}
+		
+		.hands-left{
+			margin-top: 80px;
+		}
+		
+		.reaciveted{
+			transform: rotate(-24deg);
+			width: 160px;
+			margin-top: 30px;
+		}
+		.reaciveted p { margin-bottom: 15px;}
+		.clothing{
+			margin-top: -120px;
+		}
+		
+		.Simuleta p{
+			transform: rotate(-11deg);
+		}
+		
+		.idntity{
+			text-align: center;
+			margin-right: 80px;
+		}
+		.eye-left{
+			margin-top: 80px;
+		}
+		.eye-right{
+			margin-top: 30px;
+		}
+		.box{
+			margin-top: -20px;
+		}
+		.footer{
+			width: 3400px;
+			height:60px;
+			background-color: #CBC7E5;
+		}
+		.footer .txt{
+			height:50px;
+			text-align: center;
+			line-height: 60px;
+			width: 160px;
+			font-size: 20px;
+			color: #7D73BF;
+			position: relative;
+			border-top:5px solid #7D73BF ;
+			border-left:5px solid #7D73BF ;
+			border-right:5px solid #fff;
+			border-bottom:5px solid #fff;
+		}
+		.footer .txt .nav{
+			position: absolute;
+			top: -90px;
+			left: 0;
+			width: 160px;
+			background-color: #CBC7E5;
+			padding: 20px 0;
+			display: none;
+		}
+		
+		.footer .txt:hover .nav{
+			display: block;
+		}
+		.footer .txt .nav a{
+			height: 45px;
+			line-height: 45px;
+			display: block;
+		}
+		
+		.item:nth-child(1){
+			animation:myfirst 1s;
+			-moz-animation:myfirst 1s; /* Firefox */
+			-webkit-animation:myfirst 1s; /* Safari and Chrome */
+			-o-animation:myfirst 1s; /* Opera */
+		}
+		.item:nth-child(2){
+			animation:myfirst 2s;
+			-moz-animation:myfirst 2s; /* Firefox */
+			-webkit-animation:myfirst 2s; /* Safari and Chrome */
+			-o-animation:myfirst 2s; /* Opera */
+		}
+		.item:nth-child(3){
+			animation:myfirst 3s;
+			-moz-animation:myfirst 3s; /* Firefox */
+			-webkit-animation:myfirst 3s; /* Safari and Chrome */
+			-o-animation:myfirst 3s; /* Opera */
+		}
+		.item:nth-child(4){
+			animation:myfirst 4s;
+			-moz-animation:myfirst 4s; /* Firefox */
+			-webkit-animation:myfirst 4s; /* Safari and Chrome */
+			-o-animation:myfirst 4s; /* Opera */
+		}
+		.item:nth-child(5){
+			animation:myfirst 5s;
+			-moz-animation:myfirst 5s; /* Firefox */
+			-webkit-animation:myfirst 5s; /* Safari and Chrome */
+			-o-animation:myfirst 5s; /* Opera */
+		}
+		.item:nth-child(6){
+			animation:myfirst 6s;
+			-moz-animation:myfirst 6s; /* Firefox */
+			-webkit-animation:myfirst 6s; /* Safari and Chrome */
+			-o-animation:myfirst 6s; /* Opera */
+		}
+		.item:nth-child(7){
+			animation:myfirst 7s;
+			-moz-animation:myfirst 7s; /* Firefox */
+			-webkit-animation:myfirst 7s; /* Safari and Chrome */
+			-o-animation:myfirst 7s; /* Opera */
+		}
+		
+		@-webkit-keyframes myfirst /* Safari 与 Chrome */
+		{
+		    from {
+				padding-top: 280px;
+			}
+		    to {
+				padding-top: 0;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="text">
+			<a href="collage.html">EXPERIENCE</a>
+		</div>
+		<div class="list">
+			<div class="item x-row ">
+				<div class="idntity">
+					<p>idntity & body</p>
+					<img  src="img/arrow/Asset 3.png" width="120px" height="140px"/>
+				</div>
+				<img class="eye-left" src="img/eye-left.png" width="200px" height="80px" />
+			</div>
+			<div class="item">
+				<img class="eye-right" src="img/eye-right.png"  width="200px"/>
+			</div>
+			<div class="item x-row x-row-middle">
+				<img  src="img/beard-01.png"  width="200px"/>
+			</div>
+			<div class="item x-row box">
+				<div class="x-row">
+					<div class="reaciveted">
+						<p>Reaciveted and pueried?</p>
+						<img  src="img/arrow/Asset 1.png" width="160px" />
+					</div>
+				</div>
+				<img class="clothing" src="img/clothing.png" width="360px" height="320px" />
+			</div>
+			<div class="item x-row">
+				<div class="x-row x-row-middle x-row-center">
+					<div class="Simuleta x-tc">
+						<img  src="img/arrow/Asset 2.png" width="100px"/>
+						<p>Simuleta experience?</p>
+					</div>
+				</div>
+				<img  class="leg2" src="img/leg2.png" width="380px" height="380px" />
+			</div>
+			<div class="item x-row x-row-middle">
+				<div style="margin-right: 20px;">
+					<img  src="img/arrow/Asset 6.png" width="120px"/>
+				</div>
+				<div class="x-row">
+					<img class="hands-left" src="img/hands-left.png" width="200px" height="260px" />
+					<img class="hands-right" src="img/hands-right.png" width="180px" />
+				</div>
+			</div>
+			<div class="item">
+				<div class="x-row" style="margin-top: 30px;">
+					<img class="feet-right" src="img/feet-right.png" width="220px" height="120px" />
+					<img class="feet-left" src="img/feet-left.png" width="160px" height="230px" />
+				</div>
+				<p class="txt x-tc">Experience metaphor</p>
+			</div>
+		</div>
+		
+		
+	</div>
+	<footer class="footer">
+		<div class="txt">
+			<div class="nav">
+				<a href="./index.html">Back to reality</a>
+			</div>
+			START
+		</div>
+	</footer>
+</body>
+</html>

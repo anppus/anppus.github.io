@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>collage</title>
+	<style>
+		*,html,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+			position: relative;
+			font-family: FZXiaoBiaoSong-B05S;
+		}
+		@font-face {
+			font-family: FZXiaoBiaoSong-B05S;
+			src: url("css/W95FA.woff");
+		}
+		.body{
+			background: url("img/oldscreen-2.png")no-repeat center center;
+			background-size:cover;
+			width: 1200px;
+			height: 1000px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.box{
+			position: absolute;
+			left: 350px;
+			top: 180px;
+			border-right: 10px solid #7D73BF;
+			border-bottom: 10px solid #7D73BF;
+			border-left: 10px solid #7D73BF;
+			width: 400px;
+			height: 300px;
+			background-color: #A49DD2;
+			border-radius: 3px;
+		}
+		.box h1{
+			padding: 0 10px;
+			height: 35px;
+			line-height: 35px;
+			background-color: #7D73BF;
+			color: #fff;
+			font-weight: 400;
+			font-size: 18px;
+		}
+		.box .content{
+			border-top:5px solid #333 ;
+			border-left:5px solid #333 ;
+			border-right:5px solid #CBC7E5 ;
+			border-bottom:5px solid #CBC7E5 ;
+			height: 255px;
+		}
+		.box .content .info{
+			margin: 30px 0 10px 60px;
+			border-top:5px solid #333 ;
+			border-left:5px solid #333 ;
+			border-right:5px solid #CBC7E5 ;
+			border-bottom:5px solid #CBC7E5 ;
+			background-color: #fff;
+			font-size: 16px;
+			padding: 20px 12px;
+			width: 240px;
+			height: 60px;
+			text-align: center;
+		}
+		.box .content .tx{
+			 text-align: center;
+		}
+		
+		.list{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 20px;
+		}
+		.list .item{
+			border-top:5px solid #fff ;
+			border-left:5px solid #fff ;
+			border-right:5px solid #7D73BF ;
+			border-bottom:5px solid #7D73BF ;
+			display: block;
+			background-color: #A49DD2;
+			height: 40px;
+			width: 120px;
+			line-height: 40px;
+			margin: 0 10px;
+			text-decoration:none;
+			font-size: 17px;
+			color: #000;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="box">
+			<h1>Log in</h1>
+			<div class="content">
+				<div class="info">
+					<p>Are you ready to experience?</p>
+				</div>
+				<p class="tx">How are you feeling?</p>
+				<div class="list">
+					<a href="indexx.html" class="item">I'm ready</a>
+					<a href="index - 副本.html" class="item">Return to real</a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</body>
+</html>

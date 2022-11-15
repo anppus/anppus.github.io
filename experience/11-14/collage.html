@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>collage</title>
+	<style>
+		*,html,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+			font-family: FZXiaoBiaoSong-B05S;
+		}
+		@font-face {
+			font-family: FZXiaoBiaoSong-B05S;
+			src: url("css/W95FA.woff");
+		}
+		body{
+			background-color: #333;
+			padding-top: 20px;
+		}
+		.body{
+			background:#333 url("img/collage.png") no-repeat center center;
+			margin: 0 auto;
+			width: 1200px;
+			height: 1880px;
+			position: relative;
+		}
+		.eye{
+			position: absolute;
+			right:348px;
+			top: 0;
+			height: 150px;
+			width: 280px;
+			cursor: pointer;
+		}
+		.eye:hover{
+			background: url( "img/eye-17.png")no-repeat center center;
+			background-size: cover;
+		}
+		.eye a,.hand a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.mouth{
+			position: absolute;
+			right:537px;
+			top: 169px;
+			height: 257px;
+			width: 200px;
+			cursor: pointer;
+		}
+		.mouth:hover{
+			background: url( "img/mouth-22.png")no-repeat center center;
+			background-size: cover;
+		}
+		
+		.heart{
+			position: absolute;
+			right:388px;
+			top: 420px;
+			height: 200px;
+			width: 200px;
+			cursor: pointer;
+		}
+		.heart:hover{
+			background: url( "img/heart.png")no-repeat center center;
+			background-size: cover;
+		}
+		.hand{
+			position: absolute;
+			right:132px;
+			top: 701px;
+			height: 553px;
+			width: 240px;
+			transform: rotate(168deg);
+			cursor: pointer;
+		}
+		.hand:hover{
+			background: url( "img/hands-18.png")no-repeat center center;
+			background-size: cover;
+		}
+		
+		
+		.foot{
+			position: absolute;
+			left:228px;
+			bottom: -22px;
+			height: 473px;
+			width: 400px;
+			cursor: pointer;
+		}
+		.foot:hover{
+			background: url( "img/feet-legs-05.png")no-repeat center center;
+			background-size: cover;
+		}
+		
+		.footer{
+			margin-top: 40px;
+			height:60px;
+			background-color: #CBC7E5;
+		}
+		.footer .txt{
+			height:50px;
+			text-align: center;
+			line-height: 60px;
+			width: 160px;
+			font-size: 20px;
+			color: #7D73BF;
+			position: relative;
+			border-top:5px solid #7D73BF ;
+			border-left:5px solid #7D73BF ;
+			border-right:5px solid #fff;
+			border-bottom:5px solid #fff;
+		}
+		.footer .txt .nav{
+			position: absolute;
+			top: -136px;
+			left: 0;
+			width: 160px;
+			background-color: #CBC7E5;
+			padding: 20px 0;
+			display: none;
+		}
+		
+		.footer .txt:hover .nav{
+			display: block;
+		}
+		.footer .txt .nav a{
+			height: 45px;
+			line-height: 45px;
+			display: block;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="eye">
+			<a href="oldscreen - 副本.html"></a>
+		</div>
+		<div class="mouth"></div>
+		<div class="heart"></div>
+		<div class="hand">
+			<a href="screen.html"></a>
+		</div>
+		<div class="foot"></div>
+	</div>
+	<footer class="footer">
+		<div class="txt">
+			<div class="nav">
+				<a href="./collage.html">Back to body</a>
+				<a href="./index.html">Back to reality</a>
+			</div>
+			START
+		</div>
+	</footer> 
+</body>
+</html>

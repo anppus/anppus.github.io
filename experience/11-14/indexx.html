@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>collage</title>
+	<style>
+		*,html,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		}
+		body{
+		}
+		.body{
+			background: url("img/oldscreen-2.png")no-repeat center center;
+			background-size:cover;
+			width: 1200px;
+			height: 1000px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.box{
+			position: absolute;
+			top: 70px;
+			left: 260px;
+			height: 480px;
+			width: 650px;
+			overflow: hidden;
+		}
+		.content{
+			position: relative;
+			height: 480px;
+			width: 620px;
+			overflow: hidden;
+		}
+		.content .img1{
+			display: block;
+			position: absolute;
+			top: 75px;
+			right: 60px;
+			height: 200px;
+			width: 100px;
+			background: url("img/01.png") no-repeat center center;
+			background-size: 100% 100%;
+		}
+		.content .img2{
+			position: absolute;
+			bottom: 57px;
+			left: -55px;
+			height: 160px;
+			width: 120%;
+			background: url("img/03.png") no-repeat center center;
+			background-size: 100% 100%;
+		}
+		.content .img3{
+			display: block;
+			position: absolute;
+			bottom: 30px;
+			left:223px;
+			height: 40px;
+			width: 20%;
+			background: url("img/02.png") no-repeat center center;
+			background-size: 100% 100%;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="box">
+			<div class="content">
+				<a href="index.html" class="img1"></a>
+				<div class="img2"></div>
+				<a href="oldscreen.html" class="img3"></a>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

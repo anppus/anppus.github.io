@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>screen</title>
+	<style>
+		*,html,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+			font-family: FZXiaoBiaoSong-B05S;
+		}
+		@font-face {
+			font-family: FZXiaoBiaoSong-B05S;
+			src: url("css/W95FA.woff");
+		}
+		body{
+			background-color: #333;
+		}
+		.body{
+			background:#333 url("img/hand-screen.png") no-repeat center center;
+			background-size:100% auto;
+			margin: 0 auto;
+			width: 1200px;
+			height: 892px;
+			position: relative;
+		}
+		.box{
+			position: absolute;
+			top: 165px;
+			right: 140px;
+			width: 440px;
+			height: 400px;
+			background:url("img/screen.png") no-repeat center center;
+			background-size:100% 100%;
+		}
+		 @font-face {
+		 	font-family: FZXiaoBiaoSong-B05S;
+		 	src: url("css/W95FA.woff");
+		 }  
+		.content{
+			width: 440px;
+			height: 400px;
+			font-family: FZXiaoBiaoSong-B05S;
+			display: none;
+			text-align: left;
+			padding-left:30px;
+			overflow: hidden;
+		}
+		.content p{
+			margin-bottom: 30px;
+		}
+		.box:hover{
+			top: 166px;
+			background:url("img/hand-screen-4.png") no-repeat center center;
+			background-size:100% 100%;
+		}
+		.box:hover .content{
+			display: block;
+		}
+		.next{
+			position: absolute;
+			right: 30px;
+			bottom: 15px;
+			font-size: 25px;
+			color: #fff;
+			display: block;
+			z-index: 9999;
+		}
+		.footer{
+			margin-top: 40px;
+			height:60px;
+			background-color: #CBC7E5;
+		}
+		.footer .txt{
+			height:50px;
+			text-align: center;
+			line-height: 60px;
+			width: 160px;
+			font-size: 20px;
+			color: #7D73BF;
+			position: relative;
+			border-top:5px solid #7D73BF ;
+			border-left:5px solid #7D73BF ;
+			border-right:5px solid #fff;
+			border-bottom:5px solid #fff;
+		}
+		.footer .txt .nav{
+			position: absolute;
+			top: -136px;
+			left: 0;
+			width: 160px;
+			background-color: #CBC7E5;
+			padding: 20px 0;
+			display: none;
+		}
+		
+		.footer .txt:hover .nav{
+			display: block;
+		}
+		.footer .txt .nav a{
+			height: 45px;
+			line-height: 45px;
+			display: block;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="box">
+			<marquee class="content" direction="up" scrollamount ="3">
+				<p>Digital simulations have an uncanny ability to proliferate, transform, and agitate. Ubiquitous screens and devices have defined the psychological formation of the younger generation. Immersive techniques and metadata management are transforming the techno-environment such that we should no longer think in terms of technology shaping self-perception, but instead of technology simulating the self, and then replacing the self with its simulation.</p>
+				<p>The technological downloading of human identity is the horizon of this evolution.</p>
+				<p>Cofounder of the AI startup Luka, Eugenia Kuyda designed a chatbot named Replika to speak with Roman Mazurenko, a friend who had passed away. A device intended for digital ghosts, Replika is only able to repeat questions and answers recorded in the past—a simulated reality where the identity of a person can be reactivated and queried.</p>
+				<p>“Become virtually immortal” is the purpose of Eternime, an online service that preserves people’s memories after their death. You can activate it while you’re alive by allowing the service access to your social media, and you upload photos and geolocation history. All data is stored and processed before it is sent to an AI avatar that virtually recreates your personality. The mission is to accurately reflect your personality as time goes by, thanks to your interactions with the avatar while you’re alive.</p>
+			</marquee>
+		</div>
+		<a href="collage.html" class="next">
+			Back to body
+		</a>
+	</div>
+	<footer class="footer">
+		<div class="txt">
+			<div class="nav">
+				<a href="./collage.html">Back to body</a>
+				<a href="./index.html">Back to reality</a>
+			</div>
+			START
+		</div>
+	</footer>
+</body>
+</html>

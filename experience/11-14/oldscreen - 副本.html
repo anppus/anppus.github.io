@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>collage</title>
+	<style>
+		*,html,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+			position: relative;
+			font-family: FZXiaoBiaoSong-B05S;
+		}
+		@font-face {
+			font-family: FZXiaoBiaoSong-B05S;
+			src: url("css/W95FA.woff");
+		}
+		.x-row{
+			display: flex;
+		}
+		.x-row-middle {
+			align-items: center;
+		}
+		.x-row-bottom {
+			align-items: flex-start;
+		
+		}
+		.body{
+			background: url("img/background.png")no-repeat center center;
+			background-size:cover;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			width: 1800px;
+			height: 1000px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.main{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1800px;
+			display: flex;
+		}
+		.box{
+			background-color: #7D73BF;
+			padding: 15px;
+			width: 900px;
+			height: 700px;
+			background-color: #A49DD2;
+			border-radius: 3px;
+		}
+		.box.left .img{
+			background:#7D73BF url("img/左.jpg") no-repeat center center;
+			background-size: cover;
+			color: #fff;
+			position: relative;
+		}
+		.box.center{
+			height: 960px;
+			width: 400px;
+			border-top:5px solid #CBC7E5 ;
+			border-left:5px solid #CBC7E5 ;
+			border-right:5px solid #CBC7E5 ;
+			border-bottom:5px solid #CBC7E5 ;
+		}
+		.box.right .img{
+			background: url("img/右.jpg") no-repeat center center;
+			background-size: cover;
+		}
+		
+		.box.left .content,.box.right .content{
+			width: 650px;
+			height: 690px;
+		}
+		.box.left .content .txt{
+			padding: 20px;
+			display: none;
+		}
+		.box.left:hover .content  .txt{
+			display: block;
+			position: relative;
+			z-index: 99999;
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.box.left:hover .img::after{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			content: '';
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.6);
+		}
+		.box .content{
+			border-top:5px solid #333 ;
+			border-left:5px solid #333 ;
+			border-right:5px solid #CBC7E5 ;
+			border-bottom:5px solid #CBC7E5 ;
+			
+		}
+		.box .content .info{
+			margin: 20px;
+			border-top:5px solid #333 ;
+			border-left:5px solid #333 ;
+			border-right:5px solid #CBC7E5 ;
+			border-bottom:5px solid #CBC7E5 ;
+			background-color: #A49DD2;
+			color: #7D73BF;
+			font-size: 16px;
+			padding: 20px 12px;
+			width: 300px;
+			height: 864px;
+			text-align: left;
+			overflow-y: auto;
+			font-size: 18px;
+		}
+		.box .content .tx{
+			 text-align: center;
+		}
+		.next{
+			position: absolute;
+			right: 30px;
+			bottom: 15px;
+			font-size: 25px;
+			color: #000;
+			display: block;
+			z-index: 9999;
+		}
+		.footer{
+			margin-top: 40px;
+			height:60px;
+			background-color: #CBC7E5;
+		}
+		.footer .txt{
+			height:50px;
+			text-align: center;
+			line-height: 60px;
+			width: 160px;
+			font-size: 20px;
+			color: #7D73BF;
+			position: relative;
+			border-top:5px solid #7D73BF ;
+			border-left:5px solid #7D73BF ;
+			border-right:5px solid #fff;
+			border-bottom:5px solid #fff;
+		}
+		.footer .txt .nav{
+			position: absolute;
+			top: -136px;
+			left: 0;
+			width: 160px;
+			background-color: #CBC7E5;
+			padding: 20px 0;
+			display: none;
+		}
+		
+		.footer .txt:hover .nav{
+			display: block;
+		}
+		.footer .txt .nav a{
+			height: 45px;
+			line-height: 45px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+	</div>
+	<div class="main x-row-middle">
+		<div class="box left">
+			<div class="img">
+				<div class="content x-row x-row-middle">
+					<div class="txt">
+					Mark Hansen in his New Philosophy for New Media highlights the role of the human body in “enframing” information, and the process through which the body, in conjunction with various apparatuses, renders information perceptible and gives forms to digital images. He argues that because digital data “explodes” the framed image that is the basic unit of photography and film, the human body is empowered as a “convertor” of polymorphous digital data, able to actualize singular experience.8 According to Hansen, this process demonstrates the human body as a final site to resist the universalizing and homogenizing power of capitalism epitomized in the unlimited interconvertibility of digital data. Because of its “sensorimotor power to create the unpredictable, the experimental, the new,” the body becomes a site that can resist the capitalist imposition of universal exchangeability as manifested in digital convergence.9 As insightful an intervention as it is, this idealized notion of the human body nonetheless is ahistorical, abstracted from any specific socioeconomic conditions. Hansen assumes that the body itself is automatically capable of resistance.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box center">
+			<div class="content">
+				<div class="info">
+					The human body as a medium is not a new phenomenon. Traditional Chinese philosophy and religious practices, as well as spiritualism in the nineteenth century, had featured different versions of the body-as-a-medium within different epistemological modes.5 Increasingly pervasive computational environments bring the human body to the center of current media studies, especially in new media scholarship on digitization and networks.6 But the emergence of an “information body”—the body as a medium for information processing—in China in the 1980s, on the one hand, registered the ways in which contemporary media technologies transform the perceptions and interactions of the human body with the world, and, on the other hand, was a discursive construction deeply entrenched in the politics of the postsocialist world, accompanying the production and unleashing of consumer desire in the process of marketization, and concurrent with the privilege of “information workers” over factory workers and peasants, who were once valorized as socialist subjects.7 This “information body,” however, is not merely a passive receiver or transmitter of information.
+				</div>
+			</div>
+		</div>
+		<div class="box right">
+			<div class="img">
+				<div class="content">
+					
+				</div>
+			</div>
+		</div>
+		<a href="collage.html" class="next">
+			Back to body
+		</a>
+	</div>
+	<footer class="footer">
+		<div class="txt">
+			<div class="nav">
+				<a href="./collage.html">Back to body</a>
+				<a href="./index.html">Back to reality</a>
+			</div>
+			START
+		</div>
+	</footer>
+	
+</body>
+</html>
